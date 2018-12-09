@@ -31,12 +31,13 @@ export default class DetailForm extends React.Component {
       someone_description: this.descriptionRef.current.value.toUpperCase() + 2,
       someone_option: this.state.value
     };
-    if (
-      body.someone_fname === "" ||
-      body.someone_surname === "" ||
-      body.someone_description === ""
-    ) {
-      alert("Hello! filds cannot be empty!!");
+    console.log(body.someone_fname);
+    if (body.someone_fname === "2") {
+      alert("Hello! first name cannot be empty!!");
+    } else if (body.someone_surname === "2") {
+      alert("Hello! surname cannot be empty!!");
+    } else if (body.someone_description === "2") {
+      alert("Hello! Description cannot be empty!!");
     } else if (body.someone_option === 0) {
       alert("Hello! You need to select at least on opetion!!");
     } else {
