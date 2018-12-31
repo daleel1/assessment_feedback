@@ -3,7 +3,7 @@ import DetailForm from "./Fields";
 import FeedBackers from "./FeedBackers";
 import FeedBackees from "./FeedBackees";
 import SoftSkills from "./SoftSkills";
-
+import SubSoftSkills from "./SoftSkills";
 
 export default class Form extends Component {
   render() {
@@ -11,8 +11,9 @@ export default class Form extends Component {
       <div>
         <FeedBackers />
         <FeedBackees />
-        <SoftSkills/>
+        <SoftSkills />
         {/* <DetailForm /> */}
+        <SubSoftSkills />
       </div>
     );
   }
