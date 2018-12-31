@@ -12,7 +12,6 @@ export default class SubSoftSkills extends React.Component {
       body: JSON.stringify({
         supSoftSkill: this.value
       })
-      .console.lgo(this.value)
     }).catch(error => console.error(error));
   };
 
