@@ -5,17 +5,22 @@ import FeedBackees from "./FeedBackees";
 import SoftSkills from "./SoftSkills";
 import SubSoftSkills from "./SubSoftSkills";
 import AssuranceQuestion from "./AssuranceQuestion";
+import Scale from "./Scale";
+import Comment from "./Comment";
 
 export default class Form extends Component {
   render() {
     return (
-      <div>
+      <div className=" ">
         <FeedBackers />
         <FeedBackees />
         <SoftSkills />
         {/* <DetailForm /> */}
         <SubSoftSkills />
         <AssuranceQuestion />
+        <Scale />
+        <Comment />
+        <button className="btn btn-primary">Submit</button>
       </div>
     );
   }
