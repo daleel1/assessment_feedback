@@ -34,9 +34,11 @@ export default class DetailForm extends React.Component {
     console.log(body.someone_fname);
     if (body.someone_fname === "2") {
       alert("Hello! first name cannot be empty!!");
-    } else if (body.someone_surname === "2") {
-      alert("Hello! surname cannot be empty!!");
-    } else if (body.someone_description === "2") {
+    }
+    // else if (body.someone_surname === "2") {
+    //   alert("Hello! surname cannot be empty!!");
+    // }
+    else if (body.someone_description === "2") {
       alert("Hello! Description cannot be empty!!");
     } else if (body.someone_option === 0) {
       alert("Hello! You need to select at least on opetion!!");
@@ -80,12 +82,19 @@ export default class DetailForm extends React.Component {
                     ref={this.firstNameRef}
                   />
                   <br />
-                  <label className="font-weight-bold" htmlFor="surname">
+                  <label
+                    className="font-weight-bold"
+                    htmlFor="surname"
+                    for="validationCustom01"
+                  >
                     Surname
                   </label>
                   <input
+                    type="text"
                     className="input form-control form-control-lg"
                     placeholder="Surname"
+                    id="validationCustom01"
+                    required
                     ref={this.surnameRef}
                   />
                   <br />
