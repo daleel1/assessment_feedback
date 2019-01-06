@@ -1,6 +1,27 @@
 import React, { Component } from "react";
 
 export default class Scale extends Component {
+  constructor(props) {
+    super(props);
+    this.scale = React.createRef();
+  }
+
+  onSubmit = event => {
+    event.preventDefault();
+    const body = {
+      scale_value: this.scale.current.value
+    };
+    console.log(body.scale_value);
+    // fetch("/url", {
+    //   headers: {
+    //     Accept: "application/json",
+    //     "Content-Type": "application/json"
+    //   },
+    //   method: "POST",
+    //   body: JSON.stringify(body)
+    // }).catch(error => console.error(error));
+  };
+
   render() {
     return (
       <div className="container  mt-4">
@@ -20,7 +41,10 @@ export default class Scale extends Component {
               max="10"
               step="1"
               id="customRange3"
+              ref={this.scale}
+              onChange={e => this.onSubmit(e)}
             />
+            {/* {console.log(input.value)} */}
           </div>
         </div>
       </div>
