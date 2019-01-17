@@ -28,7 +28,7 @@ class AssuranceQuestion extends React.Component {
               onChange={this.handleChange}
             >
               <option>
-                Have you worked with Ahmed enough to give feedback on this? *
+                Have you worked with him/her enough to give feedback on this? *
               </option>
               <option value={"Yes"}>Yes</option>
               <option value={"No"}>No</option>
