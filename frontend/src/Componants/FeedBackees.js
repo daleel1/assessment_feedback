@@ -21,7 +21,7 @@ class FeedBackees extends React.Component {
     return (
       <div>
         <div className="drop-down mt-5">
-          <p>2- Who are you giving feedback to?</p>
+          <p>Who are you giving feedback to?</p>
           <div className="container">
             <select
               className="custom-select mt-3"
