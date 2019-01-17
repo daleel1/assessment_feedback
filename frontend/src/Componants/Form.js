@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DetailForm from "./Fields";
+// import DetailForm from "./Fields";
 import FeedBackers from "./FeedBackers";
 import FeedBackees from "./FeedBackees";
 import SoftSkills from "./SoftSkills";
@@ -16,7 +16,7 @@ export default class Form extends Component {
         <FeedBackees />
         <SoftSkills />
         {/* <DetailForm /> */}
-        <SubSoftSkills />
+        {/* <SubSoftSkills /> */}
         <AssuranceQuestion />
         <Scale />
         <Comment />
