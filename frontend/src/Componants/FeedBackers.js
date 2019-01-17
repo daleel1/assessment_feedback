@@ -21,9 +21,7 @@ class FeedBackers extends React.Component {
     return (
       <div>
         <div className="drop-down mt-5">
-          <p>
-            1- Please tell us who you are?*
-          </p>
+          <p>Please tell us who you are?*</p>
           <div className="container">
             <select
               className="custom-select mt-3"
